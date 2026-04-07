@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="estilo.css">
+<footer class="index-rodape">
+        <div class="index-container rodape-grid">
+            <div>
+                <div class="logo-marca rodape-logo">
+                    <div class="logo-box">🔧</div>
+                    <span>AutoMaster</span>
+                </div>
+                <p class="rodape-texto">
+                    Sua oficina de confiança há mais de 15 anos,
+                    oferecendo serviços de qualidade para seu veículo.
+                </p>
+            </div>
+
+            <div>
+                <h3>Contato</h3>
+                <p>Rua das Oficinas, 123<br>São Paulo - SP</p>
+                <p>(11) 3456-7890</p>
+                <p>contato@automaster.com.br</p>
+            </div>
+
+            <div>
+                <h3>Horário de Atendimento</h3>
+                <p>Segunda à Sexta: 8h às 18h</p>
+                <p>Sábado: 8h às 12h</p>
+                <p>Domingo: Fechado</p>
+            </div>
+
+            <div>
+                <h3>Links Rápidos</h3>
+                <a href="#">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="agendar.php">Agendar</a>
+                <a href="area_admin.php">Área Admin</a>
+            </div>
+        </div>
+
+        <div class="index-container rodape-final">
+            <p>© 2026 AutoMaster Oficina Mecânica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</html>
