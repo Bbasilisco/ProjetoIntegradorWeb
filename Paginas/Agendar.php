@@ -7,7 +7,7 @@
     <title>Agendar</title>
 </head>
 <body>
-    <?php include 'topo.php'; ?>
+    <?php include 'Topo.php'; ?>
     <div class="agendar-page-container">
     
     <div class="titulos">
@@ -98,6 +98,6 @@
         </div>
 </div>
 
-    <?php include 'rodape.php'; ?>
+    <?php include 'Rodape.php'; ?>
 </body>
 </html>

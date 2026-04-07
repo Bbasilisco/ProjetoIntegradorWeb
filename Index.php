@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php
-   include('topo.php');
+   include('Topo.php');
     ?>
 
     <section class="hero-index">
@@ -130,7 +130,7 @@
         </div>
     </section>
 <?php
-    include('rodape.php');
+    include('Rodape.php');
     ?>
 
 
