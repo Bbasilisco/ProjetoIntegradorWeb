@@ -1,178 +1,36 @@
+/* ============================================================
+   RESET E CONFIGURAÇÕES GERAIS
+   ============================================================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body {
     background: #f3f4f6;
-    padding: 40px 20px;
-    padding-top: 80px;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* ------------------- Agendar ---------------------- */
-/* TITULO */
-h1 {
-    text-align: center;
-    font-size: 34px;
-    margin-bottom: 10px;
-}
-body > h2 {
-    text-align: center;
-    color: #6b7280;
-    font-weight: 400;
-    margin-bottom: 35px;
-}
-/* GRID PRINCIPAL */
-#agendar {
-    align-items: start;
-    max-width: 1000px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 25px;
-}
-/* CARD FORM */
-form {
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    grid-column: 1;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-}
-.campo {
-    display: flex;
-    flex-direction: column;
-}
-/* TITULO CARD */
-#agendar > h2 {
-    grid-column: 1;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-/* TITULOS */
-h3 {
-    margin: 20px 0 10px;
-    font-size: 16px;
-    color: #111827;
-}
-/* FAZ O H3 OCUPAR A LINHA TODA */
-.full {
-    grid-column: 1 / -1;
-}
-/* LABEL */
-label {
-    font-size: 14px;
-    color: #374151;
-}
-/* INPUTS */
-input, select, textarea {
-    width: 100%;
-    padding: 12px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    background: #f9fafb;
-    transition: 0.2s;
-}
-/* FOCO */
-input:focus, select:focus, textarea:focus {
-    outline: none;
-    border-color: #e50914;
-    background: #fff;
-}
-/* GRID 2 COLUNAS */
-.dados_pessoais,
-.data_hora {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-/* TEXTAREA */
-textarea {
-    height: 90px;
-    resize: none;
-}
-/* BOTÃO */
-.botao_agendar button {
-    width: 100%;
-    padding: 14px;
-    background: #e50914;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
+a {
+    text-decoration: none;
     transition: 0.3s;
 }
-.botao_agendar button:hover {
-    background: #c40812;
-}
-/* SIDEBAR */
-.contato, .box {
-    width: 90%;
-    height: fit-content;
-    align-self: start;
-    background: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-}
-/* TEXTO CONTATO */
-.contato p {
-    margin-bottom: 18px;
-    line-height: 1.5;
-    color: #374151;
-}
-/* LISTA */
-.steps {
-    list-style: none;
-}
-.steps li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    font-size: 14px;
-    color: #374151;
-}
-/* CÍRCULO */
-.circulo {
-    min-width: 26px;
-    height: 26px;
-    background: #e50914;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    font-size: 12px;
-    font-weight: bold;
-}
-/* SIDEBAR (COLUNA DIREITA) */
-.sidebar {
-    grid-column: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-/* ------------------- Fim Agendar ---------------------- */
 
-
-/* =========================
-   INDEX AUTMASTER
-   ========================= */
-
+/* ============================================================
+   HEADER / TOPO (FIXO)
+   ============================================================ */
 .index-topo {
     width: 100%;
     background: #0a0a0a;
     border-bottom: 2px solid #dc0a0a;
     padding: 12px 0;
-
-    position: fixed;   /* se já estiver, mantém */
+    position: fixed;
     top: 0;
     left: 0;
+    z-index: 9999;
 }
 
 .index-container {
@@ -186,7 +44,6 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
 }
 
 .logo-marca {
@@ -194,25 +51,24 @@ textarea {
     align-items: center;
     gap: 12px;
     color: #f3f4f6;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
 }
 
 .logo-box {
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
     background: #dc0a0a;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
 }
 
 .menu-topo {
     display: flex;
     align-items: center;
-    gap: 34px;
+    gap: 30px;
 }
 
 .menu-topo a {
@@ -221,461 +77,213 @@ textarea {
     font-weight: 600;
 }
 
-.menu-topo a.ativo {
+.menu-topo a:hover, .menu-topo a.ativo {
     color: #dc0a0a;
 }
 
 .menu-topo .btn-admin {
-    padding: 12px 20px;
+    padding: 10px 20px;
     background: #f3f4f6;
     color: #dc0a0a;
-    border-radius: 10px;
+    border-radius: 8px;
     border: 2px solid #dc0a0a;
 }
 
-.hero-index {
-    min-height: 620px;
-    display: flex;
-    align-items: center;
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)),
-        url('imagem/bg_mec.jpg') center center / cover no-repeat;
+.menu-topo .btn-admin:hover {
+    background: #dc0a0a;
+    color: #fff;
 }
 
-.hero-conteudo {
-    padding-top: 40px;
-    padding-bottom: 40px;
+/* ============================================================
+   ESTRUTURA DA PÁGINA AGENDAR (CORREÇÃO DE SOBREPOSIÇÃO)
+   ============================================================ */
+
+/* O segredo está aqui: o padding-top empurra o H1 para baixo do menu fixo */
+.agendar-page-container {
+    padding-top: 120px; 
+    padding-bottom: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.hero-index h1 {
-    font-size: 72px;
-    line-height: 1.05;
-    color: #f3f4f6;
-    text-align: left;
-    margin-bottom: 24px;
+.titulos {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
 }
 
-.hero-index h1 span {
-    color: #dc0a0a;
+.titulos h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #111827;
 }
 
-.hero-index p {
-    max-width: 760px;
-    font-size: 20px;
-    line-height: 1.7;
-    color: #f3f4f6;
-    margin-bottom: 34px;
+.titulos h2 {
+    font-size: 18px;
+    color: #6b7280;
+    font-weight: 400;
 }
 
-.hero-botoes {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
+/* Grid Principal: Form | Sidebar */
+#agendar {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding: 0 20px;
+    align-items: start;
 }
 
-.btn-vermelho,
-.btn-branco,
-.btn-borda,
-.btn-preto {
-    display: inline-block;
-    padding: 15px 28px;
-    border-radius: 10px;
-    font-size: 16px;
+/* ============================================================
+   FORMULÁRIO
+   ============================================================ */
+form {
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+form h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    border-left: 5px solid #dc0a0a;
+    padding-left: 15px;
+    color: #111827;
+}
+
+h3 {
+    margin: 25px 0 15px;
+    font-size: 17px;
+    color: #111;
     font-weight: 700;
 }
 
-.btn-vermelho {
-    background: #dc0a0a;
-    color: #ffffff;
-    border: 2px solid #dc0a0a;
-}
-
-.btn-branco {
-    background: #f3f4f6;
-    color: #0a0a0a;
-    border: 2px solid #f3f4f6;
-}
-
-.btn-borda {
-    background: transparent;
-    color: #dc0a0a;
-    border: 2px solid #dc0a0a;
-}
-
-.btn-preto {
-    background: #0a0a0a;
-    color: #f3f4f6;
-    border: 2px solid #0a0a0a;
-}
-
-.servicos-index {
-    background: #f5f5f5;
-    padding: 90px 0 80px;
-}
-
-.servicos-index h2,
-.porque-index h2,
-.cta-index h2,
-.comentarios-index h2 {
-    font-size: 58px;
-    line-height: 1.15;
-    text-align: center;
-    color: #0a0a0a;
-    margin-bottom: 18px;
-}
-
-.servicos-index h2 span,
-.porque-index h2 span,
-.comentarios-index h2 span {
-    color: #dc0a0a;
-}
-
-.subtitulo-index {
-    max-width: 860px;
-    margin: 0 auto 58px;
-    text-align: center;
-    font-size: 20px;
-    line-height: 1.7;
-    color: #666666;
-}
-
-.grid-servicos {
+/* Campos em Grid (Lado a Lado) */
+.dados_pessoais, .data_hora {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-.card-servico {
-    background: #ffffff;
-    border: 1px solid #d9d9d9;
-    border-radius: 18px;
-    padding: 24px;
-    min-height: 210px;
+.full {
+    grid-column: span 2;
 }
 
-.card-servico.destaque {
-    border: 2px solid #dc0a0a;
+.campo, .email, .dados_veiculo, .servicos, .observaçoes {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
 }
 
-.icone-servico {
-    width: 48px;
-    height: 48px;
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #dc0a0a;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(220, 10, 10, 0.1);
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.botao_agendar button {
+    width: 100%;
+    padding: 15px;
     background: #dc0a0a;
-    color: #ffffff;
-    border-radius: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.botao_agendar button:hover {
+    background: #b80808;
+    transform: translateY(-2px);
+}
+
+/* ============================================================
+   SIDEBAR (CONTATO E PASSOS)
+   ============================================================ */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato, .box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.contato h3, .box h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #dc0a0a;
+}
+
+.steps {
+    list-style: none;
+}
+
+.steps li {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    margin-bottom: 18px;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #444;
 }
 
-.card-servico h3 {
-    font-size: 20px;
-    color: #0a0a0a;
-    margin: 0 0 12px 0;
-}
-
-.card-servico p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666666;
-}
-
-.centro-botao {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.porque-index {
-    background: #0a0a0a;
-    padding: 85px 0;
-}
-
-.porque-index h2 {
-    color: #f3f4f6;
-    margin-bottom: 54px;
-}
-
-.grid-beneficios {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-}
-
-.beneficio-item {
-    text-align: center;
-    color: #f3f4f6;
-}
-
-.icone-beneficio {
-    width: 62px;
-    height: 62px;
-    margin: 0 auto 18px;
+.circulo {
+    min-width: 30px;
+    height: 30px;
     background: #dc0a0a;
+    color: #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 26px;
+    font-weight: bold;
 }
 
-.beneficio-item h3 {
-    color: #f3f4f6;
-    font-size: 20px;
-    margin: 0 0 10px 0;
-}
-
-.beneficio-item p {
-    color: #f3f4f6;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.cta-index {
-    background: #dc0a0a;
-    padding: 90px 0;
-}
-
-.cta-conteudo {
-    text-align: center;
-}
-
-.cta-index h2 {
-    color: #ffffff;
-    margin-bottom: 18px;
-}
-
-.cta-index p {
-    color: #ffffff;
-    font-size: 22px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-
-.comentarios-index {
-    background: #f5f5f5;
-    padding: 90px 0 70px;
-    border-bottom: 2px solid #dc0a0a;
-}
-
-.comentarios-index h2 {
-    margin-bottom: 42px;
-}
-
-.grid-comentarios {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-}
-
-.card-comentario-index {
-    background: #ffffff;
-    border: 1px solid #dddddd;
-    border-radius: 14px;
-    padding: 26px;
-}
-
-.estrelas {
-    color: #f4b400;
-    font-size: 24px;
-    margin-bottom: 18px;
-}
-
-.card-comentario-index p {
-    font-size: 16px;
-    line-height: 1.7;
-    color: #333333;
-    margin-bottom: 18px;
-}
-
-.card-comentario-index h3 {
-    font-size: 16px;
-    color: #0a0a0a;
-    margin: 0;
-}
-
-.index-rodape {
-    background: #0a0a0a;
-    color: #f3f4f6;
-    padding: 46px 0 24px;
-}
-
-.rodape-grid {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr 1fr 1fr;
-    gap: 40px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #dc0a0a;
-}
-
-.rodape-logo {
-    margin-bottom: 18px;
-}
-
-.rodape-texto,
-.index-rodape p,
-.index-rodape a {
-    color: #f3f4f6;
-    font-size: 15px;
-    line-height: 1.7;
-}
-
-.index-rodape h3 {
-    color: #f3f4f6;
-    margin-bottom: 14px;
-    font-size: 18px;
-}
-
-.index-rodape a {
-    display: block;
-    margin-bottom: 8px;
-}
-
-.rodape-final {
-    text-align: center;
-    padding-top: 22px;
-}
-
-@media (max-width: 1100px) {
-    .grid-servicos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .grid-comentarios {
+/* ============================================================
+   RESPONSIVIDADE
+   ============================================================ */
+@media (max-width: 900px) {
+    #agendar {
         grid-template-columns: 1fr;
     }
-
-    .rodape-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero-index h1,
-    .servicos-index h2,
-    .porque-index h2,
-    .cta-index h2,
-    .comentarios-index h2 {
-        font-size: 46px;
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        padding: 0;
-    }
-
-    .topo-conteudo {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .menu-topo {
-        flex-wrap: wrap;
-        gap: 16px;
-    }
-
-    .hero-index {
-        min-height: 520px;
-    }
-
-    .hero-index h1 {
-        font-size: 38px;
-    }
-
-    .hero-index p,
-    .subtitulo-index,
-    .cta-index p {
-        font-size: 17px;
-    }
-
-    .grid-servicos,
-    .grid-beneficios,
-    .rodape-grid {
+    
+    .dados_pessoais, .data_hora {
         grid-template-columns: 1fr;
     }
-
-    .servicos-index h2,
-    .porque-index h2,
-    .cta-index h2,
-    .comentarios-index h2 {
-        font-size: 34px;
+    
+    .full {
+        grid-column: span 1;
+    }
+    
+    .agendar-page-container {
+        padding-top: 100px;
     }
 }
-
-/* =========================
-   CORREÇÃO FULL WIDTH REAL
-   ========================= */
-
-/* remove borda branca lateral */
-body {
-    margin: 0;
-    padding: 0;
-}
-
-/* garante que TODAS as seções ocupem tela inteira */
-.index-topo,
-.hero-index,
-.servicos-index,
-.porque-index,
-.cta-index,
-.comentarios-index,
-.index-rodape {
-    width: 100%;
-}
-
-/* HERO FULL WIDTH REAL */
-.hero-index {
-    width: 100%;
-    min-height: 100vh; /* ocupa altura da tela */
-    display: flex;
-    align-items: center;
-}
-
-/* remove qualquer limitação externa */
-.index-topo,
-.hero-index,
-.servicos-index,
-.porque-index,
-.cta-index,
-.comentarios-index,
-.index-rodape {
-    margin: 0;
-}
-
-/* garante que container NÃO limite fundo */
-.hero-index,
-.servicos-index,
-.porque-index,
-.cta-index,
-.comentarios-index,
-.index-rodape {
-    max-width: 100%;
-}
-
-/* mantém conteúdo centralizado corretamente */
-.index-container {
-    width: 100%;
-    max-width: 1240px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-/* ajuste importante do fundo */
-.hero-index {
-    background-size: cover;
-    background-position: center;
-}
-
-/* =========================
-   NAVBAR FIXA (STICKY)
-   ========================= */
-
-.index-topo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-}
-
-/* TERMINA AQUI HOME */
