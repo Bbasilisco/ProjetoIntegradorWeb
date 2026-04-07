@@ -17,7 +17,7 @@ if ($_POST) {
 <head>
     <meta charset="UTF-8">
     <title>Login AutoMaster</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="FrontEnd/Estilo.css">
 </head>
 <body>
 <div class="login-container">
