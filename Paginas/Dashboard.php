@@ -6,7 +6,7 @@ if (!isset($_SESSION['logado'])) {
 }
 ?>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../FrontEnd/Estilo.css">
 
 <div class="wrapper">
 
