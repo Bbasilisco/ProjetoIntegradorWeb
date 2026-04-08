@@ -156,3 +156,436 @@ h3 {
     font-size: 17px;
     color: #111827;
 }
+.hero-index {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)),
+        url('imagem/bg_mec.jpg') center center / cover no-repeat;
+}
+ 
+.hero-conteudo {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+ 
+.hero-index h1 {
+    font-size: 72px;
+    line-height: 1.05;
+    color: #f3f4f6;
+    text-align: left;
+    margin-bottom: 24px;
+}
+ 
+.hero-index h1 span {
+    color: #dc0a0a;
+}
+ 
+.hero-index p {
+    max-width: 760px;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #f3f4f6;
+    margin-bottom: 34px;
+}
+ 
+.hero-botoes {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+ 
+.btn-vermelho,
+.btn-branco,
+.btn-borda,
+.btn-preto {
+    display: inline-block;
+    padding: 15px 28px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+ 
+.btn-vermelho {
+    background: #dc0a0a;
+    color: #ffffff;
+    border: 2px solid #dc0a0a;
+}
+ 
+.btn-branco {
+    background: #f3f4f6;
+    color: #0a0a0a;
+    border: 2px solid #f3f4f6;
+}
+ 
+.btn-borda {
+    background: transparent;
+    color: #dc0a0a;
+    border: 2px solid #dc0a0a;
+}
+ 
+.btn-preto {
+    background: #0a0a0a;
+    color: #f3f4f6;
+    border: 2px solid #0a0a0a;
+}
+ 
+.servicos-index {
+    background: #f5f5f5;
+    padding: 90px 0 80px;
+}
+ 
+.servicos-index h2,
+.porque-index h2,
+.cta-index h2,
+.comentarios-index h2 {
+    font-size: 58px;
+    line-height: 1.15;
+    text-align: center;
+    color: #0a0a0a;
+    margin-bottom: 18px;
+}
+ 
+.servicos-index h2 span,
+.porque-index h2 span,
+.comentarios-index h2 span {
+    color: #dc0a0a;
+}
+ 
+.subtitulo-index {
+    max-width: 860px;
+    margin: 0 auto 58px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #666666;
+}
+ 
+.grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+ 
+.card-servico {
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 18px;
+    padding: 24px;
+    min-height: 210px;
+}
+ 
+.card-servico.destaque {
+    border: 2px solid #dc0a0a;
+}
+ 
+.icone-servico {
+    width: 48px;
+    height: 48px;
+    background: #dc0a0a;
+    color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+ 
+.card-servico h3 {
+    font-size: 20px;
+    color: #0a0a0a;
+    margin: 0 0 12px 0;
+}
+ 
+.card-servico p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666666;
+}
+ 
+.centro-botao {
+    text-align: center;
+    margin-top: 30px;
+}
+ 
+.porque-index {
+    background: #0a0a0a;
+    padding: 85px 0;
+}
+ 
+.porque-index h2 {
+    color: #f3f4f6;
+    margin-bottom: 54px;
+}
+ 
+.grid-beneficios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+ 
+.beneficio-item {
+    text-align: center;
+    color: #f3f4f6;
+}
+ 
+.icone-beneficio {
+    width: 62px;
+    height: 62px;
+    margin: 0 auto 18px;
+    background: #dc0a0a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+ 
+.beneficio-item h3 {
+    color: #f3f4f6;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+ 
+.beneficio-item p {
+    color: #f3f4f6;
+    font-size: 16px;
+    line-height: 1.6;
+}
+ 
+.cta-index {
+    background: #dc0a0a;
+    padding: 90px 0;
+}
+ 
+.cta-conteudo {
+    text-align: center;
+}
+ 
+.cta-index h2 {
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+ 
+.cta-index p {
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+ 
+.comentarios-index {
+    background: #f5f5f5;
+    padding: 90px 0 70px;
+    border-bottom: 2px solid #dc0a0a;
+}
+ 
+.comentarios-index h2 {
+    margin-bottom: 42px;
+}
+ 
+.grid-comentarios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+ 
+.card-comentario-index {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 14px;
+    padding: 26px;
+}
+ 
+.estrelas {
+    color: #f4b400;
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+ 
+.card-comentario-index p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333333;
+    margin-bottom: 18px;
+}
+ 
+.card-comentario-index h3 {
+    font-size: 16px;
+    color: #0a0a0a;
+    margin: 0;
+}
+ 
+.index-rodape {
+    background: #0a0a0a;
+    color: #f3f4f6;
+    padding: 46px 0 24px;
+}
+ 
+.rodape-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dc0a0a;
+}
+ 
+.rodape-logo {
+    margin-bottom: 18px;
+}
+ 
+.rodape-texto,
+.index-rodape p,
+.index-rodape a {
+    color: #f3f4f6;
+    font-size: 15px;
+    line-height: 1.7;
+}
+ 
+.index-rodape h3 {
+    color: #f3f4f6;
+    margin-bottom: 14px;
+    font-size: 18px;
+}
+ 
+.index-rodape a {
+    display: block;
+    margin-bottom: 8px;
+}
+ 
+.rodape-final {
+    text-align: center;
+    padding-top: 22px;
+}
+ 
+@media (max-width: 1100px) {
+    .grid-servicos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+    .grid-comentarios {
+        grid-template-columns: 1fr;
+    }
+ 
+    .rodape-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+    .hero-index h1,
+    .servicos-index h2,
+    .porque-index h2,
+    .cta-index h2,
+    .comentarios-index h2 {
+        font-size: 46px;
+    }
+}
+ 
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+ 
+    .topo-conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+ 
+    .menu-topo {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+ 
+    .hero-index {
+        min-height: 520px;
+    }
+ 
+    .hero-index h1 {
+        font-size: 38px;
+    }
+ 
+    .hero-index p,
+    .subtitulo-index,
+    .cta-index p {
+        font-size: 17px;
+    }
+ 
+    .grid-servicos,
+    .grid-beneficios,
+    .rodape-grid {
+        grid-template-columns: 1fr;
+    }
+ 
+    .servicos-index h2,
+    .porque-index h2,
+    .cta-index h2,
+    .comentarios-index h2 {
+        font-size: 34px;
+    }
+}
+ 
+/* =========================
+   CORREÇÃO FULL WIDTH REAL
+   ========================= */
+ 
+/* remove borda branca lateral */
+body {
+    margin: 0;
+    padding: 0;
+}
+ 
+/* garante que TODAS as seções ocupem tela inteira */
+.index-topo,
+.hero-index,
+.servicos-index,
+.porque-index,
+.cta-index,
+.comentarios-index,
+.index-rodape {
+    width: 100%;
+}
+ 
+/* HERO FULL WIDTH REAL */
+.hero-index {
+    width: 100%;
+    min-height: 100vh; /* ocupa altura da tela */
+    display: flex;
+    align-items: center;
+}
+ 
+/* remove qualquer limitação externa */
+.index-topo,
+.hero-index,
+.servicos-index,
+.porque-index,
+.cta-index,
+.comentarios-index,
+.index-rodape {
+    margin: 0;
+}
+ 
+/* garante que container NÃO limite fundo */
+.hero-index,
+.servicos-index,
+.porque-index,
+.cta-index,
+.comentarios-index,
+.index-rodape {
+    max-width: 100%;
+}
+ 
+/* mantém conteúdo centralizado corretamente */
+.index-container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+ 
+/* ajuste importante do fundo */
+.hero-index {
+    background-size: cover;
+    background-position: center;
+}
