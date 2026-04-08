@@ -21,7 +21,7 @@
                     <h3 class="full">Dados Pessoais</h3>
                     <div class="campo">
                         <label>Nome:</label>
-                        <input type="text" placeholder="Seu Nome">
+                        <input type="text" placeholder="Seu Nome"
                     </div>
 
                     <div class="campo">
