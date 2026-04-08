@@ -1,3 +1,4 @@
+USE jpAutoCenter;
 
 INSERT INTO tblTipoTelefone (id, tipoTelefone) VALUES (1, 'Celular/WhatsApp');
 INSERT INTO tblTipoTelefone (id, tipoTelefone) VALUES (2, 'Fixo Residencial');
