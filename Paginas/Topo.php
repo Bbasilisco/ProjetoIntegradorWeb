@@ -9,7 +9,7 @@
             <nav class="menu-topo">
                 <a href="#" class="ativo">Início</a>
                 <a href="#servicos">Serviços</a>
-                <a href="agendar.php">Agendar</a>
+                <a href="Paginas/Agendar.php">Agendar</a>
                 <a href="area_admin.php" class="btn-admin">Área Admin</a>
             </nav>
         </div>
