@@ -24,7 +24,7 @@
             </p>
 
             <div class="hero-botoes">
-                <a href="/Paginas/Agendar.php" class="btn-vermelho">Agendar Serviço</a>
+                <a href="Paginas/Agendar.php" class="btn-vermelho">Agendar Serviço</a>
                 <a href="#servicos" class="btn-branco">Nossos Serviços</a>
             </div>
         </div>
