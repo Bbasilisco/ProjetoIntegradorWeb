@@ -11,7 +11,7 @@ if (!isset($_SESSION['logado'])) {
 <head>
 <meta charset="UTF-8">
 <title>Dashboard - JP AutoCenter</title>
-<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="../FrontEnd/Estilo.css">
 </head>
 <body>
 <div class="wrapper">

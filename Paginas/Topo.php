@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="../FrontEnd/Estilo.css">
 <header class="index-topo">
         <div class="index-container topo-conteudo">
             <div class="logo-marca">

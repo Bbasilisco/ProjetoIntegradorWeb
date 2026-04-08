@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoMaster</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./FrontEnd/Estilo.css">
 </head>
 <body>
 <?php
-   include('topo.php');
+   include('Topo.php');
     ?>
 
     <section class="hero-index">
@@ -130,7 +130,7 @@
         </div>
     </section>
 <?php
-    include('rodape.php');
+    include('Rodape.php');
     ?>
 
 
