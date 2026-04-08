@@ -20,8 +20,13 @@ body {
 
 }
 .titulo{
-    margin-top: 50px;
+    margin-top: 80px;
     text-align: center;
+}
+.subtitulo{
+    margin-top:10px;
+    text-align: center;
+    font-size: 22px;
 }
 
 

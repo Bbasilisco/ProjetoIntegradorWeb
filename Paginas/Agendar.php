@@ -12,7 +12,7 @@
     
     <div class="titulos">
         <h1 class="titulo">Agendar Serviço</h1>
-        <h2 >Preencha o formulário abaixo e entraremos em contato para confirmar seu agendamento</h2>
+        <h2 class="subtitulo">Preencha o formulário abaixo e entraremos em contato para confirmar seu agendamento</h2>
     </div>
         <div id="agendar">
             <form action="">
