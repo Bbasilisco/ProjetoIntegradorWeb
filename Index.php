@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoMaster</title>
+    <title>JP Auto Center</title>
     <link rel="stylesheet" href="./FrontEnd/Estilo.css">
 </head>
 <body>
@@ -72,7 +72,7 @@
 
     <section class="porque-index">
         <div class="index-container">
-            <h2>Por que escolher a <span>AutoMaster</span>?</h2>
+            <h2>Por que escolher a <span>JP Auto Center</span>?</h2>
 
             <div class="grid-beneficios">
                 <div class="beneficio-item">
@@ -117,7 +117,7 @@
 
                 <div class="card-comentario-index">
                     <div class="estrelas">★★★★★</div>
-                    <p>"Confio na AutoMaster há anos. Sempre atenciosos e honestos."</p>
+                    <p>"Confio na JP Auto Center há anos. Sempre atenciosos e honestos."</p>
                     <h3>Ana Paula</h3>
                 </div>
 
