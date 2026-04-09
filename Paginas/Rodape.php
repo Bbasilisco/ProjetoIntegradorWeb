@@ -5,7 +5,7 @@
             <div>
                 <div class="logo-marca rodape-logo">
                     <div class="logo-box">🔧</div>
-                    <span>AutoMaster</span>
+                    <span>JP Auto Center</span>
                 </div>
                 <p class="rodape-texto">
                     Sua oficina de confiança há mais de 15 anos,
@@ -15,15 +15,15 @@
 
             <div>
                 <h3>Contato</h3>
-                <p>Rua das Oficinas, 123<br>São Paulo - SP</p>
-                <p>(11) 3456-7890</p>
-                <p>contato@automaster.com.br</p>
+                <p> Estr. Jequitibá, 790<br> Carapicuíba - SP</p>
+                <p>(11) 99855-9115</p>
+                <p>autocenterjp1@hotmail.com </p>
             </div>
 
             <div>
                 <h3>Horário de Atendimento</h3>
                 <p>Segunda à Sexta: 8h às 18h</p>
-                <p>Sábado: 8h às 12h</p>
+                <p>Sábado: 8h às 13h</p>
                 <p>Domingo: Fechado</p>
             </div>
 
@@ -37,7 +37,7 @@
         </div>
 
         <div class="index-container rodape-final">
-            <p>© 2026 AutoMaster Oficina Mecânica. Todos os direitos reservados.</p>
+            <p>© 2026 JP Auto Center Oficina Mecânica. Todos os direitos reservados.</p>
         </div>
     </footer>
 

@@ -3,7 +3,7 @@
         <div class="index-container topo-conteudo">
             <div class="logo-marca">
                 <div class="logo-box">🔧</div>
-                <span>AutoMaster</span>
+                <span>JP Auto Center</span>
             </div>
 
             <nav class="menu-topo">
