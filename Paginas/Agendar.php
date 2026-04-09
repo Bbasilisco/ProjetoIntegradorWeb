@@ -132,7 +132,7 @@
 </body>
 <?php
 
-include 'connect.php';
+include 'conexao.php';
 
 $nome = $_POST['nome'];
 $email = $_POST['email'];
