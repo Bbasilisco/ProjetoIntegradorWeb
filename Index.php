@@ -8,8 +8,8 @@
 </head>
 <body>
 <?php
-   include './Paginas/Topo.php'
-    ?>
+    include 'Paginas/Topo.php'; 
+?>
 
     <section class="hero-index">
         <div class="index-container hero-conteudo">
