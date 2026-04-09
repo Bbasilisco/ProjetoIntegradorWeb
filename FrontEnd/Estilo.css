@@ -1353,6 +1353,77 @@ body {
 
 /* =========================
 
-   NAVBAR FIXA (STICKY)
+ CSS SERVIÇOS
+
 
    ========================= */
+
+/* SERVIÇOS */
+.Servicos {
+    padding: 50px;
+    text-align: center;
+}
+
+.Subtitulo {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.Cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Card {
+    background: #fff;
+    padding: 25px;
+    width: 280px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.Card:hover {
+    transform: translateY(-5px);
+}
+
+.Icon {
+    background: #ffe8d6;
+    color: #f45100;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* CTA */
+.Orcamento {
+    background: #f5f5f5;
+    padding: 60px 20px;
+}
+
+.OrcamentoBox {
+    background: #f45100;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.Botao {
+    margin-top: 20px;
+}
+
+.BtnPrimario {
+    background: #111;
+    color: white;
+    padding: 12px 25px;
+    margin-right: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+}
