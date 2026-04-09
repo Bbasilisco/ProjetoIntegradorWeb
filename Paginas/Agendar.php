@@ -94,6 +94,36 @@
                     <li><div class="circulo">4</div> Seu veículo será atendido com qualidade</li>
                     </ul>
                 </div>
+                <form action="agendar.php" method="POST">
+
+<h3>Dados Pessoais</h3>
+
+<input type="text" name="nome" placeholder="Seu nome" required>
+<input type="text" name="telefone" placeholder="Telefone" required>
+<input type="email" name="email" placeholder="Email" required>
+
+<h3>Dados do Veículo</h3>
+
+<input type="text" name="veiculo" placeholder="Ex: Honda Civic 2020" required>
+
+<h3>Serviço</h3>
+
+<select name="servico">
+<option value="1">Troca de óleo</option>
+<option value="2">Alinhamento</option>
+<option value="3">Revisão</option>
+</select>
+
+<h3>Data e Hora</h3>
+
+<input type="date" name="data">
+<input type="time" name="hora">
+
+<textarea name="observacao" placeholder="Observações"></textarea>
+
+<button type="submit">Agendar</button>
+
+</form>
             </div>
         </div>
 </div>
