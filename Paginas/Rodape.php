@@ -32,7 +32,6 @@
                 <a href="#">Início</a>
                 <a href="#servicos">Serviços</a>
                 <a href="agendar.php">Agendar</a>
-                <a href="area_admin.php">Área Admin</a>
             </div>
         </div>
 

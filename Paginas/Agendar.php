@@ -130,4 +130,54 @@
 
     <?php include 'Rodape.php'; ?>
 </body>
+<?php
+
+include 'connect.php';
+
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$telefone = $_POST['telefone'];
+$veiculo = $_POST['veiculo'];
+$servico = $_POST['servico'];
+$data = $_POST['data'];
+$hora = $_POST['hora'];
+$observacao = $_POST['observacao'];
+
+$dataCompleta = $data . " " . $hora;
+
+# 1 salvar cliente
+$sql1 = "INSERT INTO tblProprietario (nome,email,cpf)
+VALUES ('$nome','$email','')";
+
+mysqli_query($conn,$sql1);
+
+$idCliente = mysqli_insert_id($conn);
+
+# 2 salvar telefone
+$sql2 = "INSERT INTO tblTelefone (telefone,idProprietario,idTipoTelefone)
+VALUES ('$telefone',$idCliente,1)";
+
+mysqli_query($conn,$sql2);
+
+# 3 salvar veiculo
+$sql3 = "INSERT INTO tblVeiculo (modelo,ano,idMarcaVeiculo,idProprietario)
+VALUES ('$veiculo','2020-01-01',1,$idCliente)";
+
+mysqli_query($conn,$sql3);
+
+# 4 salvar agendamento
+$sql4 = "INSERT INTO tblAgendamento (DATA,agendamento,idStatusAgendamento,idProprietario)
+VALUES ('$dataCompleta','Agendamento Oficina',1,$idCliente)";
+
+mysqli_query($conn,$sql4);
+
+# 5 salvar ordem de serviço
+$sql5 = "INSERT INTO tblOrdemServico (comentario,idTipoServico,idStatusOrdemServico,idProprietario)
+VALUES ('$observacao',$servico,1,$idCliente)";
+
+mysqli_query($conn,$sql5);
+
+echo "Agendamento realizado com sucesso!";
+
+?>
 </html>
