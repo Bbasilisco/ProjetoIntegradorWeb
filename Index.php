@@ -65,7 +65,7 @@
             </div>
 
             <div class="centro-botao">
-                <a href="#" class="btn-borda">Ver Todos os Serviços</a>
+                <a href="../Paginas/Servicos.php" class="btn-borda">Ver Todos os Serviços</a>
             </div>
         </div>
     </section>
