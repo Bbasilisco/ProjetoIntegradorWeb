@@ -1365,53 +1365,78 @@ body {
 }
 
 .Subtitulo {
-    color: #666;
-    margin-bottom: 30px;
+    color: #777;
+    margin-bottom: 50px;
+    font-size: 16px;
 }
 
 .Cards {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .Card {
     background: #fff;
-    padding: 25px;
-    width: 280px;
-    border-radius: 12px;
+    padding: 28px;
+    border-radius: 16px;
     text-align: left;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: all 0.25s ease;
 }
 
 .Card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.08);
 }
 
 .Icon {
-    background: #ffe8d6;
+    background: #fde7d9;
     color: #f45100;
-    display: inline-block;
-    padding: 10px;
-    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.Card h3{
+    font-size: 18px;
     margin-bottom: 10px;
+}
+
+.Card p{
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.Card ul {
+    padding-left: 18px;
+}
+
+.Card li {
+    font-size: 14px;
+    margin-bottom: 6px;
 }
 
 /* CTA */
 .Orcamento {
     background: #f5f5f5;
-    padding: 60px 20px;
+    padding: 70px 20px;
 }
 
 .OrcamentoBox {
-    background: #f45100;
+    background: #dc0a0a;
     color: white;
     text-align: center;
     padding: 50px;
-    border-radius: 12px;
-    max-width: 1000px;
+    border-radius: 16px;
+    max-width: 999px;
     margin: auto;
 }
 
@@ -1423,7 +1448,8 @@ body {
     background: #111;
     color: white;
     padding: 12px 25px;
-    margin-right: 10px;
     border-radius: 6px;
     text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;   
 }

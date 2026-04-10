@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../FrontEnd/Estilo.css">
 
     <?php include 'Topo.php'; ?>
-
+</head>
+<body
 <section class="Hero">
     <div class="Overlay">
         <h1>Nossos Serviços</h1>
@@ -200,5 +201,6 @@
     </div>
 </section>
 <?php include 'Rodape.php'; ?>
-</head>
-<body>
+
+</body>
+</html>
