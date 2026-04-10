@@ -11,9 +11,7 @@ $data = $_POST['data'];
 $hora = $_POST['hora'];
 $observacoes = $_POST['observacoes'];
 
-$sql = "INSERT INTO agendamentos 
-(nome, telefone, email, veiculo, servico, data, hora, observacoes) 
-VALUES 
+$sql = "INSERT INTO `tblagendamento`(`id`, `DATA`, `agendamento`, `idStatusAgendamento`, `idProprietario`) VALUES (NULL,'$data','$servico',1,1)"; 
 ('$nome','$telefone','$email','$veiculo','$servico','$data','$hora','$observacoes')";
 
 if(mysqli_query($conexao,$sql)){
