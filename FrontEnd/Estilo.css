@@ -1450,10 +1450,8 @@ body {
     padding: 12px 25px;
     border-radius: 6px;
     text-decoration: none;
-<<<<<<< HEAD
     display: inline-block;
     margin-top: 15px;   
-=======
 }
 .container-agendamento{
 display:flex;
@@ -1477,5 +1475,4 @@ gap:25px;
 background:#f5f5f5;
 padding:25px;
 border-radius:10px;
->>>>>>> 7679ca4e0f4cd4d59832c0c9ca30d2246c8eaf5a
 }
