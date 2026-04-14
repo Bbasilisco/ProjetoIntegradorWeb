@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "Conexao.php"; // Usa seu arquivo com $conn
+require_once "Conexao.php";
 
 // 1. Consulta para o Card: Agendamentos Pendentes
 $sql_pendentes = "SELECT COUNT(*) as total 
