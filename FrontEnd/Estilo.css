@@ -35,6 +35,11 @@ body {
 
 /* TITULO */
 
+body {
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+}
+
 h1 {
 
     text-align: center;
@@ -60,6 +65,8 @@ body>h2 {
 /* GRID PRINCIPAL */
 
 #agendar {
+
+    padding: 20px;
 
     align-items: start;
 
@@ -328,7 +335,9 @@ textarea {
 
     gap: 20px;
 
+
 }
+
 
 /* ------------------- Fim Agendar ---------------------- */
 
