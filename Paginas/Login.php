@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Dados de demonstração baseados na imagem
 $email_demo = "admin@oficina.com";
 $senha_demo = "admin123";
 

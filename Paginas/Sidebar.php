@@ -26,8 +26,8 @@ $pagina_atual = basename($_SERVER['PHP_SELF']);
                     <i class="fas fa-calendar-alt"></i> Agendamentos
                 </a>
             </li>
-            <li class="<?= ($pagina_atual == 'Ordens.php') ? 'active' : '' ?>">
-                <a href="Ordens.php">
+            <li class="<?= ($pagina_atual == 'OrdemServico.php') ? 'active' : '' ?>">
+                <a href="OrdemServico.php">
                     <i class="fas fa-file-invoice"></i> Ordens de Serviço
                 </a>
             </li>
