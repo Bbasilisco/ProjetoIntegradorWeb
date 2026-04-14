@@ -31,11 +31,11 @@ $pagina_atual = basename($_SERVER['PHP_SELF']);
                     <i class="fas fa-file-invoice"></i> Ordens de Serviço
                 </a>
             </li>
-            <li class="<?= ($pagina_atual == 'configuracoes.php') ? 'active' : '' ?>">
-                <a href="configuracoes.php">
-                    <i class="fas fa-cog"></i> Configurações
+            <li>
+                <a href="../Index.php" class="link-voltar">
+                    <i class="fas fa-sign-out-alt"></i> Voltar para o site
                 </a>
-            </li>
+            </li>   
         </ul>
     </nav>
 </aside>
