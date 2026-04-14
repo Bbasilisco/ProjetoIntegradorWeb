@@ -245,7 +245,7 @@ textarea {
 .contato,
 .box {
 
-    width: 90%;
+    width: 100%;
 
     height: fit-content;
 
@@ -254,8 +254,6 @@ textarea {
     background: #fff;
 
     padding: 25px;
-
-    flex: 1;
 
     border-radius: 12px;
 
@@ -339,7 +337,7 @@ textarea {
 
     height: 100%;
 
-    justify-content: flex-start /* Alinha ao topo */;
+    justify-content: flex-start; /* Alinha ao topo */;
 
 
 }
