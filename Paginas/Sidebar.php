@@ -11,31 +11,31 @@ $pagina_atual = basename($_SERVER['PHP_SELF']);
 
     <nav class="sidebar-nav">
         <ul>
-            <li class="<?= ($pagina_atual == 'index.php') ? 'active' : '' ?>">
-                <a href="index.php">
-                    <i class="fas fa-th-large"></i> Visão Geral
+            <li class="<?= ($pagina_atual == 'AreaAdmin.php') ? 'active' : '' ?>">
+                <a href="AreaAdmin.php">
+                    <i class="fas fa-th-large"></i> Dashboard
                 </a>
             </li>
-            <li class="<?= ($pagina_atual == 'clientes.php') ? 'active' : '' ?>">
-                <a href="clientes.php">
+            <li class="<?= ($pagina_atual == 'Clientes.php') ? 'active' : '' ?>">
+                <a href="Clientes.php">
                     <i class="fas fa-users"></i> Clientes
                 </a>
             </li>
-            <li class="<?= ($pagina_atual == 'agendamentos.php') ? 'active' : '' ?>">
-                <a href="agendamentos.php">
+            <li class="<?= ($pagina_atual == 'AgendarAdm.php') ? 'active' : '' ?>">
+                <a href="AgendarAdm.php">
                     <i class="fas fa-calendar-alt"></i> Agendamentos
                 </a>
             </li>
-            <li class="<?= ($pagina_atual == 'ordens.php') ? 'active' : '' ?>">
-                <a href="ordens.php">
+            <li class="<?= ($pagina_atual == 'OrdemServico.php') ? 'active' : '' ?>">
+                <a href="OrdemServico.php">
                     <i class="fas fa-file-invoice"></i> Ordens de Serviço
                 </a>
             </li>
-            <li class="<?= ($pagina_atual == 'configuracoes.php') ? 'active' : '' ?>">
-                <a href="configuracoes.php">
-                    <i class="fas fa-cog"></i> Configurações
+            <li>
+                <a href="Logout.php" class="link-voltar">
+                    <i class="fas fa-sign-out-alt"></i> Voltar para o site
                 </a>
-            </li>
+            </li>   
         </ul>
     </nav>
 </aside>
