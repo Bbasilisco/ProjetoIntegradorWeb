@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <button type="submit">Confirmar Agendamento</button>
                 </div>
             </form>
-            <div class="sidebar">
+            <div class="SidebarAgendar">
                 <div class="contato">
                     <h3>Informações de Contato</h3>
                     <p><strong>Telefone</strong><br>📞(11) 3456-7890</p><br>

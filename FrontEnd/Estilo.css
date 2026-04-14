@@ -255,6 +255,8 @@ textarea {
 
     padding: 25px;
 
+    flex: 1;
+
     border-radius: 12px;
 
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
@@ -325,7 +327,7 @@ textarea {
 
 /* SIDEBAR (COLUNA DIREITA) */
 
-.sidebar {
+.SidebarAgendar {
 
     grid-column: 2;
 
@@ -334,6 +336,10 @@ textarea {
     flex-direction: column;
 
     gap: 20px;
+
+    height: 100%;
+
+    justify-content: flex-start /* Alinha ao topo */;
 
 
 }
