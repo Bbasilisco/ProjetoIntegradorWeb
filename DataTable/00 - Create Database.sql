@@ -77,17 +77,8 @@ CREATE TABLE tblTelefone(
     FOREIGN KEY(idTipoTelefone) REFERENCES tblTipoTelefone(id)
 ); 
 CREATE TABLE tblAgendamento(
-    ALTER TABLE tblAgendamento DROP PRIMARY KEY;
     id INT PRIMARY KEY,
     DATA DATETIME,
-    nome VARCHAR(100),
-    telefone VARCHAR(20),
-    email VARCHAR(100),
-    modelo VARCHAR(100),
-    servico VARCHAR(100),
-    data_agendamento DATE,
-    hora_agendamento TIME,
-    observacoes TEXT,
     agendamento VARCHAR(100),
     idStatusAgendamento INT,
     idProprietario INT,
