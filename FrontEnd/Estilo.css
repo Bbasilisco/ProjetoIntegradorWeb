@@ -698,7 +698,10 @@ textarea {
     gap: 24px;
 
 }
-
+.grid-servicos :hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
 
 
 .card-servico {
@@ -714,17 +717,6 @@ textarea {
     min-height: 210px;
 
 }
-
-
-
-.card-servico.destaque {
-
-    border: 2px solid #dc0a0a;
-
-}
-
-
-
 .icone-servico {
 
     width: 48px;
