@@ -32,7 +32,7 @@ $pagina_atual = basename($_SERVER['PHP_SELF']);
                 </a>
             </li>
             <li>
-                <a href="../Index.php" class="link-voltar">
+                <a href="Logout.php" class="link-voltar">
                     <i class="fas fa-sign-out-alt"></i> Voltar para o site
                 </a>
             </li>   
