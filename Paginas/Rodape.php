@@ -29,9 +29,9 @@
 
             <div>
                 <h3>Links Rápidos</h3>
-                <a href="#">Início</a>
-                <a href="#servicos">Serviços</a>
-                <a href="agendar.php">Agendar</a>
+                <a href="./Index.php">Início</a>
+                <a href="./Paginas/Servicos.php">Serviços</a>
+                <a href="Agendar.php">Agendar</a>
             </div>
         </div>
 

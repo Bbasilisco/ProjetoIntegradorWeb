@@ -201,6 +201,5 @@
     </div>
 </section>
 <?php include 'Rodape.php'; ?>
-
-</body>
-</html>
+</head>
+<body>
