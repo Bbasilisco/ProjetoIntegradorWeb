@@ -77,6 +77,7 @@ CREATE TABLE tblTelefone(
     FOREIGN KEY(idTipoTelefone) REFERENCES tblTipoTelefone(id)
 ); 
 CREATE TABLE tblAgendamento(
+    ALTER TABLE tblAgendamento DROP PRIMARY KEY;
     id INT PRIMARY KEY,
     DATA DATETIME,
     nome VARCHAR(100),
