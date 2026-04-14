@@ -356,13 +356,7 @@ textarea {
 
 
 
-    position: fixed;
-    /* se já estiver, mantém */
-
-    top: 0;
-
-    left: 0;
-
+    position: relative;   
 }
 
 
