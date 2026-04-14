@@ -1476,3 +1476,144 @@ background:#f5f5f5;
 padding:25px;
 border-radius:10px;
 }
+/* Estilização específica para a página de Login */
+.login-page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Gradiente conforme a imagem (escuro para tons de vermelho/azul nas pontas) */
+    background: radial-gradient(circle at center, #1a1c24 0%, #0a0b0e 100%);
+    color: #fff;
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.login-header {
+    margin-bottom: 30px;
+}
+
+.login-header h1 {
+    font-size: 28px;
+    margin: 10px 0 5px;
+    color: #fff;
+}
+
+.login-header p {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.login-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    color: #333;
+    text-align: left;
+}
+
+.login-card h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #111;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon i {
+    position: absolute;
+    left: 15px;
+    color: #9ca3af;
+}
+
+.input-icon input {
+    padding-left: 45px !important;
+    margin: 0 !important;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+}
+
+.btn-entrar {
+    width: 100%;
+    padding: 14px;
+    background: #e50914; /* Vermelho Master */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-entrar:hover {
+    background: #c40812;
+}
+
+/* Caixa de Demonstração (Rosa claro na imagem) */
+.demo-info {
+    background: #fff5f5;
+    border: 1px solid #fed7d7;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+.demo-info strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #2d3748;
+}
+
+.demo-info p {
+    margin: 2px 0;
+    color: #4a5568;
+}
+
+.demo-info span {
+    font-family: monospace;
+    color: #1a202c;
+}
+
+.link-voltar {
+    display: inline-block;
+    margin-top: 20px;
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.erro-mensagem {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+}
