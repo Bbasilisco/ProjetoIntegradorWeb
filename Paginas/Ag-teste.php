@@ -1,3 +1,32 @@
+<?php
+include 'Conexao.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $nome = $_POST['nome'];
+    $telefone = $_POST['telefone'];
+    $email = $_POST['email'];
+    $modelo = $_POST['modelo'];
+    $servico = $_POST['servicos_desejados'];
+    $data = $_POST['data_agendamento'];
+    $hora = $_POST['hora_agendamento'];
+    $observacoes = $_POST['observacoes'];
+
+    $sql = "INSERT INTO tblAgendamento 
+    (nome, telefone, email, modelo, servico, data_agendamento, hora_agendamento, observacoes)
+    VALUES 
+    ('$nome', '$telefone', '$email', '$modelo', '$servico', '$data', '$hora', '$observacoes')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "<script>alert('Agendamento realizado com sucesso!');</script>";
+    } else {
+        echo "Erro: " . $conn->error;
+    }
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,6 +36,7 @@
     <title>Agendar</title>
 </head>
 <body>
+    
     <?php include 'Topo.php'; ?>
     <div class="agendar-page-container">
     
@@ -15,7 +45,7 @@
         <h2 class="subtitulo">Preencha o formulário abaixo e entraremos em contato para confirmar seu agendamento</h2>
     </div>
         <div id="agendar">
-            <form action="">
+            <form action="Ag-teste.php" method="POST">
                 <h2>Dados do Agendamento</h2>
                 <div class="dados_pessoais">
                     <h3 class="full">Dados Pessoais</h3>
@@ -53,6 +83,7 @@
                         <option value="sistema_eletrico">Sistema Elétrico</option>
                         <option value="diagnostico_computadorizado">Diagnostico Computadorizado</option>
                         <option value="outros">Outros</option>
+                        
                     </select>    
                 </div>
                 <div class="data_hora">
@@ -72,6 +103,7 @@
                     <textarea name="observacoes" id="observacoes" placeholder="Descreva o problema ou serviço necessário....."></textarea>
                 </div>
                 <div class="botao_agendar">
+                    
                     <button type="submit">Confirmar Agendamento</button>
                 </div>
             </form>
@@ -94,7 +126,6 @@
                     <li><div class="circulo">4</div> Seu veículo será atendido com qualidade</li>
                     </ul>
                 </div>
-                <form action="agendar.php" method="POST">
 
 
             </div>
