@@ -21,8 +21,8 @@ $pagina_atual = basename($_SERVER['PHP_SELF']);
                     <i class="fas fa-users"></i> Clientes
                 </a>
             </li>
-            <li class="<?= ($pagina_atual == 'Agendamentos.php') ? 'active' : '' ?>">
-                <a href="Agendamentos.php">
+            <li class="<?= ($pagina_atual == 'AgendarAdm.php') ? 'active' : '' ?>">
+                <a href="AgendarAdm.php">
                     <i class="fas fa-calendar-alt"></i> Agendamentos
                 </a>
             </li>

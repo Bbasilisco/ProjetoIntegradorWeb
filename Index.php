@@ -100,7 +100,7 @@
         <div class="index-container cta-conteudo">
             <h2>Pronto para cuidar do seu veículo?</h2>
             <p>Agende seu serviço agora e tenha a tranquilidade de um trabalho bem feito</p>
-            <a href="agendar.php" class="btn-preto">Agendar Agora</a>
+            <a href="Paginas/Agendar.php" class="btn-preto">Agendar Agora</a>
         </div>
     </section>
 

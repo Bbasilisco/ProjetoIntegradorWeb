@@ -10,7 +10,6 @@
 
     <?php 
         include "Sidebar.php"; 
-        // Inclui a lógica de consulta antes de renderizar o conteúdo
         include "ConsultarOrdemServico.php"; 
     ?>
 
