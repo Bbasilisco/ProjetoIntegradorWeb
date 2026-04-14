@@ -8,7 +8,8 @@ $senha_demo = "admin123";
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($_POST['email'] === $email_demo && $_POST['senha'] === $senha_demo) {
         $_SESSION['logado'] = true;
-        header("Location: dashboard.php");
+        // Redirecionamento ajustado para AreaAdmin.php
+        header("Location: AreaAdmin.php");
         exit();
     } else {
         $erro = "E-mail ou senha incorretos.";
@@ -21,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login AutoMaster</title>
+    <title>Login JP Auto Center</title>
     <link rel="stylesheet" href="../FrontEnd/Estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -31,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="logo-box">
                 <i class="fa-solid fa-wrench" style="color: white;"></i>
             </div>
-            <h1>AutoMaster</h1>
+            <h1>JP Auto Center</h1>
             <p>Sistema de Gestão de Oficina</p>
         </header>
 
@@ -69,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </main>
         
-        <a href="#" class="link-voltar">Voltar para o site</a>
+        <a href="../Index.php" class="link-voltar">Voltar para o site</a>
     </div>
 </body>
 </html>
