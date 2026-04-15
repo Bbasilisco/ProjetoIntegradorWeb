@@ -14,6 +14,39 @@
         <?php include "TopoAdm.php"; ?>
     </div>
     
+
+
+ <div class="header">
+    <div>
+      <h1>Clientes</h1>
+      <p>Gerencie seus clientes</p>
+    </div>
+    <button class="btn">+ Novo Cliente</button>
+  </div>
+
+  <div class="card">
+    <div class="search-box">
+      <input type="text" placeholder="Buscar clientes..." id="search">
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>E-mail</th>
+          <th>Telefone</th>
+          <th>Veículo</th>
+          <th>Placa</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="ConsultarClientes.php">
+        <!-- Dados virão do banco -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
     
 </body>
 </html>
