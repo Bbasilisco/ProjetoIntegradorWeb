@@ -556,6 +556,8 @@ textarea {
 
     margin-bottom: 34px;
 
+    text-align: center;
+
 }
 
 
@@ -649,6 +651,7 @@ textarea {
     padding: 90px 0 80px;
 
 }
+
 
 
 
@@ -1179,10 +1182,6 @@ textarea {
         font-size: 38px;
 
     }
-
-
-
-    .hero-index p,
 
     .subtitulo-index,
 
