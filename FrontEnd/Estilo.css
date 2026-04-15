@@ -1616,36 +1616,77 @@ border-radius:10px;
     text-align: center;
 }
 /****************************************************/
-/*****************SIDE BAR***************************/
+/***************** ADMIN LAYOUT *********************/
 /****************************************************/
-.sidebar {
+
+.admin-body {
+    margin: 0;
+    padding: 0;
+    background: #f3f4f6;
+}
+
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/****************************************************/
+/***************** TOPO ADMIN ***********************/
+/****************************************************/
+
+.topo-admin {
+    position: relative;
+    z-index: 1;
+}
+
+/****************************************************/
+/***************** SIDEBAR ADMIN ********************/
+/****************************************************/
+
+.admin-sidebar {
     width: 260px;
-    background-color: #000; /* Fundo preto */
-    height: 100vh;
+    min-width: 260px;
+    background-color: #000;
     color: #fff;
     padding: 20px 0;
     display: flex;
     flex-direction: column;
     border-right: 1px solid #333;
+    min-height: 100vh;
 }
 
-.sidebar-logo {
+.admin-sidebar-logo {
     padding: 0 20px 30px;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.sidebar-nav ul {
-    list-style: none;
-    padding: 0 10px; /* Pequeno recuo para o efeito arredondado */
+.admin-sidebar-logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-.sidebar-nav li {
+.admin-sidebar-nav ul {
+    list-style: none;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.admin-sidebar-nav li {
     margin-bottom: 8px;
 }
 
-.sidebar-nav a {
-    color: #a0a0a0; /* Cor de texto padrão (cinza) */
+.admin-sidebar-nav a {
+    color: #a0a0a0;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -1655,24 +1696,49 @@ border-radius:10px;
     font-size: 0.95rem;
 }
 
-.sidebar-nav i {
+.admin-sidebar-nav i {
     margin-right: 15px;
     width: 20px;
     text-align: center;
 }
 
-/* Estado Ativo (Onde o usuário está) */
-.sidebar-nav li.active a {
-    background-color: #e60000; /* Vermelho vibrante */
+.admin-sidebar-nav li.active a {
+    background-color: #e60000;
     color: #fff;
 }
 
-/* Efeito de Hover */
-.sidebar-nav li:not(.active) a:hover {
+.admin-sidebar-nav li:not(.active) a:hover {
     background-color: #1a1a1a;
     color: #fff;
 }
 
+/****************************************************/
+/***************** DASHBOARD ADMIN ******************/
+/****************************************************/
+
+.dashboard-container {
+    padding: 30px;
+}
+
+/****************************************************/
+/***************** RESPONSIVO ADMIN *****************/
+/****************************************************/
+
+@media (max-width: 991px) {
+    .admin-layout {
+        flex-direction: column;
+    }
+
+    .admin-sidebar {
+        width: 100%;
+        min-width: 100%;
+        min-height: auto;
+    }
+
+    .dashboard-container {
+        padding: 20px;
+    }
+}
 
 
 

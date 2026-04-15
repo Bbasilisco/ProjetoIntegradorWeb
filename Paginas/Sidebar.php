@@ -1,15 +1,13 @@
-
 <?php
-// Define a página atual para marcar o item como "Ativo" (vermelho)
 $pagina_atual = basename($_SERVER['PHP_SELF']);
 ?>
 
-<aside class="sidebar">
-    <div class="sidebar-logo">
+<aside class="admin-sidebar">
+    <div class="admin-sidebar-logo">
         <img src="caminho/para/seu/logo-automaster.png" alt="AutoMaster">
     </div>
 
-    <nav class="sidebar-nav">
+    <nav class="admin-sidebar-nav">
         <ul>
             <li class="<?= ($pagina_atual == 'AreaAdmin.php') ? 'active' : '' ?>">
                 <a href="AreaAdmin.php">
@@ -35,7 +33,7 @@ $pagina_atual = basename($_SERVER['PHP_SELF']);
                 <a href="Logout.php" class="link-voltar">
                     <i class="fas fa-sign-out-alt"></i> Voltar para o site
                 </a>
-            </li>   
+            </li>
         </ul>
     </nav>
 </aside>

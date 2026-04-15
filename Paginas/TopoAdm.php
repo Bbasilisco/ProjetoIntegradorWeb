@@ -7,12 +7,13 @@ $diretorioAtual = basename(dirname($_SERVER['PHP_SELF']));
 $prefixo = ($diretorioAtual == 'Paginas') ? '../' : '';
 ?>
 
-<link rel="stylesheet" href="<?php echo $prefixo; ?>FontEnd/Estilo.css">
+<link rel="stylesheet" href="<?php echo $prefixo; ?>FrontEnd/Estilo.css">
 
-<header class="index-topo">
+<header class="index-topo topo-admin">
     <div class="index-container topo-conteudo">
         <div class="logo-marca">
             <div class="logo-box">🔧</div>
             <span>JP Auto Center</span>
         </div>
+    </div>
 </header>
