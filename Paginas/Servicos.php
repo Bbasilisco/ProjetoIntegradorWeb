@@ -196,7 +196,7 @@
         <p>Entre em contato conosco ou agende uma visita para avaliarmos seu veículo</p>
 
         <div class="Botao">
-            <a href="#" class="BtnPrimario">Agendar Serviço</a>
+            <a href="/Agendar.php" class="BtnPrimario">Agendar Serviço</a>
         </div>
     </div>
 </section>

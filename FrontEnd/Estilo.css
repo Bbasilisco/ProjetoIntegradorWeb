@@ -35,6 +35,11 @@ body {
 
 /* TITULO */
 
+body {
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+}
+
 h1 {
 
     text-align: center;
@@ -60,6 +65,8 @@ body>h2 {
 /* GRID PRINCIPAL */
 
 #agendar {
+
+    padding: 20px;
 
     align-items: start;
 
@@ -238,7 +245,7 @@ textarea {
 .contato,
 .box {
 
-    width: 90%;
+    width: 100%;
 
     height: fit-content;
 
@@ -318,7 +325,7 @@ textarea {
 
 /* SIDEBAR (COLUNA DIREITA) */
 
-.sidebar {
+.SidebarAgendar {
 
     grid-column: 2;
 
@@ -328,7 +335,13 @@ textarea {
 
     gap: 20px;
 
+    height: 100%;
+
+    justify-content: flex-start; /* Alinha ao topo */;
+
+
 }
+
 
 /* ------------------- Fim Agendar ---------------------- */
 
@@ -356,13 +369,7 @@ textarea {
 
 
 
-    position: fixed;
-    /* se já estiver, mantém */
-
-    top: 0;
-
-    left: 0;
-
+    position: relative;   
 }
 
 
@@ -704,7 +711,10 @@ textarea {
     gap: 24px;
 
 }
-
+.grid-servicos :hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
 
 
 .card-servico {
@@ -720,17 +730,6 @@ textarea {
     min-height: 210px;
 
 }
-
-
-
-.card-servico.destaque {
-
-    border: 2px solid #dc0a0a;
-
-}
-
-
-
 .icone-servico {
 
     width: 48px;
