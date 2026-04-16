@@ -1,7 +1,7 @@
 <?php
 include 'Conexao.php';
  
-function BuscarTodasOrdensServico($Conexao)
+function BuscarTodasOrdensServico($Conexao) {
     try {
         $Sql = "SELECT
                     OS.id AS IdOrdem,
@@ -28,6 +28,7 @@ function BuscarTodasOrdensServico($Conexao)
         // Em ambiente acadêmico, é importante tratar e exibir o erro de forma clara
         die("Erro ao consultar ordens de serviço: " . $Erro->getMessage());
     }
+}
  
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
  
