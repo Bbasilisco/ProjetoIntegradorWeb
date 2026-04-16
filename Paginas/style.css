@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #eef2f7;
+}
+
+/* LOGIN */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: #fff;
+    padding: 40px;
+    width: 360px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #111827;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1f2937;
+}
+
+/* LAYOUT */
+.wrapper {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #111827;
+    color: #fff;
+    padding: 25px;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    margin-bottom: 10px;
+    color: #9ca3af;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #1f2937;
+    color: #fff;
+}
+
+/* MAIN */
+.main {
+    flex: 1;
+    padding: 25px;
+}
+
+/* TOPBAR */
+.topbar {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+}
+
+.search {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.card {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.card span {
+    color: #6b7280;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #111827;
+}
+
+/* TABLE */
+.table-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    color: #6b7280;
+    font-weight: normal;
+}
+
+tr {
+    border-bottom: 1px solid #eee;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.ok {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.pendente {
+    background: #fef3c7;
+    color: #92400e;
+}
