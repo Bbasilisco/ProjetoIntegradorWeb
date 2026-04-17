@@ -8,7 +8,7 @@
 </head>
 <body class="admin-body">
 
-    <?php include "Sidebar.php"; ?>
+    <<?php include "Sidebar.php"; ?> 
 
     <div class="main-content">
         <?php include "TopoAdm.php"; ?>

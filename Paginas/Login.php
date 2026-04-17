@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($_POST['email'] === $email_demo && $_POST['senha'] === $senha_demo) {
         $_SESSION['logado'] = true;
         // Redirecionamento ajustado para AreaAdmin.php
-        header("Location: AreaAdmin.php");
+        header("Location: AgendarAdm.php");
         exit();
     } else {
         $erro = "E-mail ou senha incorretos.";

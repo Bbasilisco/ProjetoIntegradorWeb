@@ -12,4 +12,10 @@ $prefixo = ($diretorioAtual == 'Paginas') ? '../' : '';
             <span>JP Auto Center</span>
         </div>
     </div>
+     <nav class="menu-topo">
+        <a href="Logout.php">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Voltar para o site</span>
+                </a>
+     </nav>
 </header>
