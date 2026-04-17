@@ -49,6 +49,7 @@ CREATE TABLE tblProprietario(
 
 CREATE TABLE tblVeiculo(
     id INT PRIMARY KEY,
+     placa VARCHAR(7),
     modelo VARCHAR(50),
     ano DATE,
     idMarcaVeiculo INT,
