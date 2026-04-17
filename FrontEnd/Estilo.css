@@ -1980,8 +1980,6 @@ border-radius:10px;
 /* IMPORTANTE */
 .main-content {
     margin-top: 80px;   /* desce por causa do topo */
-    margin-left: 80px; 
-    width: calc(100% - 260px);
     padding: 30px;
     box-sizing: border-box;
 }
