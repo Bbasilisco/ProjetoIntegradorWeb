@@ -13,7 +13,6 @@
 <section class="Hero">
     <div class="Overlay">
         <h1>Nossos Serviços</h1>
-        <p>Soluções completas para manutenção e reparo do seu veículo</p>
     </div>
 </section>
 
@@ -196,7 +195,7 @@
         <p>Entre em contato conosco ou agende uma visita para avaliarmos seu veículo</p>
 
         <div class="Botao">
-            <a href="/Agendar.php" class="BtnPrimario">Agendar Serviço</a>
+            <a href="Agendar.php" class="BtnPrimario">Agendar Serviço</a>
         </div>
     </div>
 </section>
