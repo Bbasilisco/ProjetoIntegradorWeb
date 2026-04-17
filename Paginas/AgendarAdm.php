@@ -78,8 +78,6 @@ while ($row = mysqli_fetch_assoc($result)) {
 </head>
 <body class="admin-body">
 
-    <?php include "Sidebar.php"; ?>
-
     <div class="main-content">
         <?php include "TopoAdm.php"; ?>
 
