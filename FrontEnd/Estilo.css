@@ -372,6 +372,30 @@ textarea {
     position: relative;   
 }
 
+.topo-adm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #000;
+    color: #fff;
+    border-bottom: 2px solid #e60000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    z-index: 1000;
+}
+
+.conteudo-admin {
+    margin-left: 260px; /* mesma largura da sidebar */
+    margin-top: 80px;   /* mesma altura do topo */
+    padding: 30px;
+    min-height: calc(100vh - 80px);
+    background-color: #f3f4f6;
+}
+
 
 
 .index-container {
@@ -1616,76 +1640,42 @@ border-radius:10px;
     text-align: center;
 }
 /****************************************************/
-/***************** ADMIN LAYOUT *********************/
-/****************************************************/
-
-.admin-body {
-    margin: 0;
-    padding: 0;
-    background: #f3f4f6;
-}
-
-.admin-layout {
-    display: flex;
-    min-height: 100vh;
-    width: 100%;
-}
-
-.main-content {
-    flex: 1;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-/****************************************************/
-/***************** TOPO ADMIN ***********************/
-/****************************************************/
-
-.topo-admin {
-    position: relative;
-    z-index: 1;
-}
-
-/****************************************************/
 /***************** SIDEBAR ADMIN ********************/
 /****************************************************/
 
-.admin-sidebar {
+.adm-sidebar {
+    position: fixed;
+    top: 80px;
+    left: 0;
     width: 260px;
-    min-width: 260px;
+    height: calc(100vh - 80px);
     background-color: #000;
     color: #fff;
     padding: 20px 0;
     display: flex;
     flex-direction: column;
     border-right: 1px solid #333;
-    min-height: 100vh;
+    overflow-y: auto;
+    z-index: 999;
 }
 
-.admin-sidebar-logo {
+.adm-sidebar-logo {
     padding: 0 20px 30px;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.admin-sidebar-logo img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.admin-sidebar-nav ul {
+.adm-sidebar-nav ul {
     list-style: none;
     padding: 0 10px;
     margin: 0;
 }
 
-.admin-sidebar-nav li {
+.adm-sidebar-nav li {
     margin-bottom: 8px;
 }
 
-.admin-sidebar-nav a {
+.adm-sidebar-nav a {
     color: #a0a0a0;
     text-decoration: none;
     display: flex;
@@ -1696,49 +1686,24 @@ border-radius:10px;
     font-size: 0.95rem;
 }
 
-.admin-sidebar-nav i {
+.adm-sidebar-nav i {
     margin-right: 15px;
     width: 20px;
     text-align: center;
 }
 
-.admin-sidebar-nav li.active a {
+/* ativo */
+.adm-sidebar-nav li.adm-active a {
     background-color: #e60000;
     color: #fff;
 }
 
-.admin-sidebar-nav li:not(.active) a:hover {
+/* hover */
+.adm-sidebar-nav li:not(.adm-active) a:hover {
     background-color: #1a1a1a;
     color: #fff;
 }
 
-/****************************************************/
-/***************** DASHBOARD ADMIN ******************/
-/****************************************************/
-
-.dashboard-container {
-    padding: 30px;
-}
-
-/****************************************************/
-/***************** RESPONSIVO ADMIN *****************/
-/****************************************************/
-
-@media (max-width: 991px) {
-    .admin-layout {
-        flex-direction: column;
-    }
-
-    .admin-sidebar {
-        width: 100%;
-        min-width: 100%;
-        min-height: auto;
-    }
-
-    .dashboard-container {
-        padding: 20px;
-    }
-}
 
 
 
