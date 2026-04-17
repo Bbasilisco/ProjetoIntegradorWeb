@@ -6171,6 +6171,20 @@ ALTER TABLE `tblveiculo`
   ADD CONSTRAINT `tblveiculo_ibfk_2` FOREIGN KEY (`idProprietario`) REFERENCES `tblproprietario` (`id`);
 COMMIT;
 
+--
+--Atualizacoes para as tabelas
+--
+UPDATE tblProprietario SET placa = 'ABC1D23' WHERE id = 3;
+UPDATE tblProprietario SET placa = 'JPA0C01' WHERE id = 1;
+UPDATE tblProprietario SET placa = 'KRT4F88' WHERE id = 2;
+UPDATE tblProprietario SET placa = 'BEE7G21' WHERE id = 4;
+UPDATE tblProprietario SET placa = 'LNX9H45' WHERE id = 5;
+UPDATE tblProprietario SET placa = 'MXP2J10' WHERE id = 6;
+UPDATE tblProprietario SET placa = 'RST5K88' WHERE id = 7;
+UPDATE tblProprietario SET placa = 'TVG5J99' WHERE id = 8;
+UPDATE tblProprietario SET placa = 'LOL6A15' WHERE id = 9;
+UPDATE tblProprietario SET placa = 'OIU8H82' WHERE id = 10;
+UPDATE tblProprietario SET placa = 'GAY1E50' WHERE id = 11;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
