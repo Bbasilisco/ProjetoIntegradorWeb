@@ -1,16 +1,16 @@
 USE jpAutoCenter;
 
-INSERT INTO tblProprietario (id, nome, email, cpf) VALUES (1, 'Ricardo Oliveira', 'ricardo@email.com', '11122233344');
-INSERT INTO tblProprietario (id, nome, email, cpf) VALUES (2, 'Beatriz Souza', 'bia.souza@email.com', '22233344455');
-INSERT INTO tblProprietario (id, nome, email, cpf) VALUES (3, 'Marcos Vinicius', 'marcos.v@email.com', '33344455566');
-INSERT INTO tblProprietario (id, nome, email, cpf) VALUES (4, 'Ana Paula Silva', 'anapaula@email.com', '44455566677');
-INSERT INTO tblProprietario (id, nome, email, cpf) VALUES (5, 'Carlos Eduardo', 'cadu.camionete@email.com', '55566677788');
-INSERT INTO tblProprietario (id, nome, email, cpf) VALUES (6, 'Juliana Mendes', 'ju.mendes@email.com', '66677788899');
-INSERT INTO tblProprietario (id, nome, email, cpf) VALUES (7, 'Roberto Carlos', 'rc.fretes@email.com', '77788899900');
-INSERT INTO tblProprietario (id, nome, email, cpf) VALUES (8, 'Fernanda Lima', 'fer.lima@email.com', '88899900011');
-INSERT INTO tblProprietario (id, nome, email, cpf) VALUES (9, 'Tiago Ramos', 'tiago.moto@email.com', '99900011122');
-INSERT INTO tblProprietario (id, nome, email, cpf) VALUES (10, 'Sandra Helena', 'sandra.h@email.com', '00011122233');
-INSERT INTO tblProprietario (id, nome, email, cpf) VALUES (11, 'Zeke', 'aizedamanga@yahoo.com', '65584475399');
+INSERT INTO tblProprietario (id, placa, nome, email, cpf) VALUES (3, 'ABC1D23', 'Marcos Vinicius', 'marcos.v@email.com', '33344455566');
+INSERT INTO tblProprietario (id, placa, nome, email, cpf) VALUES (1, 'JPA0C01', 'Ricardo Oliveira', 'ricardo@email.com', '11122233344');
+INSERT INTO tblProprietario (id, placa, nome, email, cpf) VALUES (2, 'KRT4F88',  'Beatriz Souza', 'bia.souza@email.com', '22233344455');
+INSERT INTO tblProprietario (id, placa, nome, email, cpf) VALUES (4, 'BEE7G21',  'Ana Paula Silva', 'anapaula@email.com', '44455566677');
+INSERT INTO tblProprietario (id, placa, nome, email, cpf) VALUES (5, 'LNX9H45',  'Carlos Eduardo', 'cadu.camionete@email.com', '55566677788');
+INSERT INTO tblProprietario (id, placa, nome, email, cpf) VALUES (6, 'MXP2J10',  'Juliana Mendes', 'ju.mendes@email.com', '66677788899');
+INSERT INTO tblProprietario (id, placa, nome, email, cpf) VALUES (7, 'RST5K88',  'Roberto Carlos', 'rc.fretes@email.com', '77788899900');
+INSERT INTO tblProprietario (id, placa, nome, email, cpf) VALUES (8, 'TVG5J99',  'Fernanda Lima', 'fer.lima@email.com', '88899900011');
+INSERT INTO tblProprietario (id, placa, nome, email, cpf) VALUES (9, 'LOL6A15',  'Tiago Ramos', 'tiago.moto@email.com', '99900011122');
+INSERT INTO tblProprietario (id, placa, nome, email, cpf) VALUES (10,'OIU8H82',  'Sandra Helena', 'sandra.h@email.com', '00011122233');
+INSERT INTO tblProprietario (id, placa, nome, email, cpf) VALUES (11,'GAY1E50',  'Zeke', 'aizedamanga@yahoo.com', '65584475399');
 
 INSERT INTO tblVeiculo (id, modelo, ano, idMarcaVeiculo, idProprietario) VALUES (1, 'D20 Custom Diesel', '1994-01-01', 3, 5);
 INSERT INTO tblVeiculo (id, modelo, ano, idMarcaVeiculo, idProprietario) VALUES (2, 'R 1250 GS', '2023-01-01', 14, 5);
