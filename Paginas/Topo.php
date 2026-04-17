@@ -20,7 +20,7 @@ $prefixo = ($diretorioAtual == 'Paginas') ? '../' : '';
             
             <a href="<?php echo ($diretorioAtual == 'Paginas') ? '' : 'Paginas/'; ?>Agendar.php">Agendar</a>
             
-            <a href="<?php echo ($diretorioAtual == 'Paginas') ? '' : 'Paginas/'; ?>AreaAdmin.php" class="btn-admin">Área Admin</a>
+            <a href="<?php echo ($diretorioAtual == 'Paginas') ? '' : 'Paginas/'; ?>AgendarAdm.php" class="btn-admin">Área Admin</a>
         </nav>
     </div>
 </header>

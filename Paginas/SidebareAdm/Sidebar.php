@@ -7,8 +7,8 @@ $pagina_atual = basename($_SERVER['PHP_SELF']);
     <nav class="adm-sidebar-nav">
         <ul>
 
-            <li class="<?= ($pagina_atual == 'AreaAdmin.php') ? 'adm-active' : '' ?>">
-                <a href="AreaAdmin.php">
+            <li class="<?= ($pagina_atual == 'AgendarAdm.php') ? 'adm-active' : '' ?>">
+                <a href="AgendarAdm.php">
                     <i class="fas fa-th-large"></i>
                     <span>Dashboard</span>
                 </a>
@@ -21,8 +21,8 @@ $pagina_atual = basename($_SERVER['PHP_SELF']);
                 </a>
             </li>
 
-            <li class="<?= ($pagina_atual == 'AgendarAdm.php') ? 'adm-active' : '' ?>">
-                <a href="AgendarAdm.php">
+            <li class="<?= ($pagina_atual == 'AgendarAdm.php.php') ? 'adm-active' : '' ?>">
+                <a href="AgendarAdm.php.php">
                     <i class="fas fa-calendar-alt"></i>
                     <span>Agendamentos</span>
                 </a>
