@@ -1727,7 +1727,7 @@ border-radius:10px;
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 6px;
-    color: #0f172a;
+    color: #fff;
 }
 
 .agendamento-title-wrap p {
@@ -1980,7 +1980,7 @@ border-radius:10px;
 /* IMPORTANTE */
 .main-content {
     margin-top: 80px;   /* desce por causa do topo */
-    margin-left: 260px; /* empurra por causa da sidebar */
+    margin-left: 80px; 
     width: calc(100% - 260px);
     padding: 30px;
     box-sizing: border-box;

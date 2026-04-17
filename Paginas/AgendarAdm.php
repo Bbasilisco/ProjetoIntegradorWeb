@@ -77,6 +77,9 @@ while ($row = mysqli_fetch_assoc($result)) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="admin-body">
+<section class="hero-index">
+
+   AGENDAMENTOS ADMIN
 
     <div class="main-content">
         <?php include "TopoAdm.php"; ?>
@@ -536,5 +539,6 @@ while ($row = mysqli_fetch_assoc($result)) {
             });
         });
     </script>
+</section>
 </body>
 </html>
