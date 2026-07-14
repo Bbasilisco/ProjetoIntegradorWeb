@@ -3,52 +3,51 @@ CREATE DATABASE jpAutoCenter;
 USE jpAutoCenter;
      
 CREATE TABLE tblTipoVeiculo(
-    id INT PRIMARY KEY,
+    id INT PRIMAY KEY AUTO_INCREMENT,
     tipoVeiculo VARCHAR(50)
 ); 
 CREATE TABLE tblEstado(
-    id INT PRIMARY KEY,
+    id INT PRIMAY KEY AUTO_INCREMENT,
     estado VARCHAR(2)
 ); 
 CREATE TABLE tblStatusAgendamento(
-    id INT PRIMARY KEY,
+    id INT PRIMAY KEY AUTO_INCREMENT,
     statusAgendamento VARCHAR(10)
 ); 
 CREATE TABLE tblStatusOrdemServico(
-    id INT PRIMARY KEY,
+    id INT PRIMAY KEY AUTO_INCREMENT,
     statusOrdemServico VARCHAR(10)
 ); 
 CREATE TABLE tblTiposServicos(
-    id INT PRIMARY KEY,
+    id INT PRIMAY KEY AUTO_INCREMENT,
     TipoServico VARCHAR(10),
     Valor decimal(10,2)
 ); 
 CREATE TABLE tblTipoTelefone(
-    id INT PRIMARY KEY,
+    id INT PRIMAY KEY AUTO_INCREMENT,
     tipoTelefone VARCHAR(20)
 );
 
 CREATE TABLE tblMarcaVeiculo(
-    id INT PRIMARY KEY,
+    id INT PRIMAY KEY AUTO_INCREMENT,
     MarcaVeiculo VARCHAR(50),
     idTipoVeiculo INT,
     FOREIGN KEY(idTipoVeiculo) REFERENCES tblTipoVeiculo(id)
 ); 
 CREATE TABLE tblCidade(
-    id INT PRIMARY KEY,
+    id INT PRIMAY KEY AUTO_INCREMENT,
     cidade VARCHAR(100),
     idEstado INT,
     FOREIGN KEY(idEstado) REFERENCES tblEstado(id)
 ); 
 CREATE TABLE tblProprietario(
-    id INT PRIMARY KEY,
+    id INT PRIMAY KEY AUTO_INCREMENT,
     nome VARCHAR(100),
     email VARCHAR(50),
     cpf VARCHAR(11)
 );
-
 CREATE TABLE tblVeiculo(
-    id INT PRIMARY KEY,
+    id INT PRIMAY KEY AUTO_INCREMENT,
      placa VARCHAR(7),
     modelo VARCHAR(50),
     ano DATE,
@@ -58,7 +57,7 @@ CREATE TABLE tblVeiculo(
     FOREIGN KEY(idProprietario) REFERENCES tblProprietario(id)
 ); 
 CREATE TABLE tblEndereco(
-    id INT PRIMARY KEY,
+    id INT PRIMAY KEY AUTO_INCREMENT,
     endereco VARCHAR(100),
     numero VARCHAR(5),
     complemento VARCHAR(50),
@@ -70,7 +69,7 @@ CREATE TABLE tblEndereco(
     FOREIGN KEY(idCidade) REFERENCES tblCidade(id)
 ); 
 CREATE TABLE tblTelefone(
-    id INT PRIMARY KEY,
+    id INT PRIMAY KEY AUTO_INCREMENT,
     telefone VARCHAR(15),
     idProprietario INT,
     idTipoTelefone INT,
@@ -78,7 +77,7 @@ CREATE TABLE tblTelefone(
     FOREIGN KEY(idTipoTelefone) REFERENCES tblTipoTelefone(id)
 ); 
 CREATE TABLE tblAgendamento(
-    id INT PRIMARY KEY,
+    id INT PRIMAY KEY AUTO_INCREMENT,
     DATA DATETIME,
     agendamento VARCHAR(100),
     idStatusAgendamento INT,
@@ -87,7 +86,7 @@ CREATE TABLE tblAgendamento(
     FOREIGN KEY(idProprietario) REFERENCES tblProprietario(id)
 ); 
 CREATE TABLE tblOrdemServico(
-    id INT PRIMARY KEY,
+    id INT PRIMAY KEY AUTO_INCREMENT,
     comentario VARCHAR(100),
     idTipoServico INT,
     idStatusOrdemServico INT,
